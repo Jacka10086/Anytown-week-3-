@@ -1,33 +1,38 @@
-
 package Anytown;
 
 public class ArrayBag implements BagInterface {
 
-    private Building[] bag;
-    private int numberOfEntries;
-    private static final int DEFAULT_CAPACITY = 25;
+    private Building[] bag; // 存储元素的数组
+    private int numberOfEntries; // 当前元素数量
+    private static final int DEFAULT_CAPACITY = 25; // 默认容量
 
+    // 无参构造函数，创建一个容量为 DEFAULT_CAPACITY 的 ArrayBag 对象
     public ArrayBag() {
         this(ArrayBag.DEFAULT_CAPACITY);
     }
 
+    // 带参构造函数，创建一个容量为 capacity 的 ArrayBag 对象
     public ArrayBag(int capacity) {
         this.bag = new Building[capacity];
         this.numberOfEntries = 0;
     }
 
+    // 获取当前元素数量
     public int getCurrentSize() {
         return this.numberOfEntries;
     }
 
+    // 判断 ArrayBag 是否为空
     public boolean isEmpty() {
         return this.numberOfEntries == 0;
     }
 
+    // 判断 ArrayBag 是否已满
     public boolean isArrayFull() {
         return this.numberOfEntries == this.bag.length;
     }
 
+    // 向 ArrayBag 中添加一个新元素
     public boolean addNewEntry(Building newEntry) {
         if (isArrayFull()) {
             return false;
@@ -35,75 +40,5 @@ public class ArrayBag implements BagInterface {
             this.bag[this.numberOfEntries++] = newEntry;
             return true;
         }
-    }
-
-    private Building removeElmentAt(int index) {
-        Building result = null;
-        if (!isEmpty() && (index >= 0 && index < this.numberOfEntries)) {
-            result = this.bag[index];
-            this.bag[index] = this.bag[numberOfEntries - 1];
-            this.bag[numberOfEntries - 1] = null;
-            this.numberOfEntries--;
-        }
-        return result;
-    }
-
-    public Building remove()
-    {
-        return removeElmentAt(this.numberOfEntries - 1);
-    }
-
-    public boolean remove(Building anEntry)
-    {
-        boolean found = false;
-        int index = 0;
-        while(!found && (index < this.numberOfEntries - 1)) {
-            if (this.bag[index].equals(anEntry)) found = true;
-             else index++;
-            
-        }
-        if (found) removeElmentAt(index);
-        return found;
-        
-    }
-
-    public void clear() 
-    {
-        while (!isEmpty()) 
-            remove();
-        
-
-    }
-
-    public int getFrequencyOf(Building anEntry) {
-        int count = 0;
-        for (int i = 0; i < this.numberOfEntries; i++) {
-            if (this.bag[i].equals(anEntry)) {
-                count++;
-            }
-        }
-        return count;
-    }
-
-    public boolean contains(Building anEntry) {
-        boolean found = false;
-        int index = 0;
-        while(!found && (index < this.numberOfEntries)) {
-            if (this.bag[index].equals(anEntry)) {
-                found = true;
-            } else {
-                index++;
-            }
-        }
-        return found;
-    }
-
-    public String toString() {
-        String strResult = "Bag[ \n";
-        for ( int i = 0; i < this.numberOfEntries; i++) {
-            strResult += this.bag[i] + "\n";
-        }
-        strResult += "]";
-        return strResult;
     }
 }
