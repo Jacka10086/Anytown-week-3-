@@ -2,7 +2,7 @@ package Anytown;
 
 import java.util.Scanner;
 import java.io.File;
-
+//good
 public class AnytownTest {
     public static void main(String[] args) throws Exception {
 
