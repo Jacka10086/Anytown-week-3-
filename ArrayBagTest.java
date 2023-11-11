@@ -11,6 +11,7 @@ public class ArrayBagTest {
 
         // 创建ArrayBag对象，初始容量设为13
         ArrayBag buildings = new ArrayBag(13);
+        
         // 创建File对象，用于读取文件“Anytown/buildings.txt” 
         File fileIn = new File("Anytown/buildings.txt");
         // 创建Scanner对象，用于从文件读取数据
