@@ -2,6 +2,7 @@ package Anytown; // 定义包Anytown
 
 // Building类代表建筑物
 public class Building {
+     
     
     private String address; // 私有属性地址
     private String owner; // 私有属性所有者
