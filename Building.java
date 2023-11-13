@@ -8,6 +8,7 @@ public class Building {
     private String owner; // 私有属性所有者
     private static int numBuildings = 0; // 静态属性，用于跟踪创建的建筑数量
 
+     
     // 默认构造器
     public Building() {
         this.address = ""; // 默认地址为空
