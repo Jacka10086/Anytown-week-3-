@@ -143,7 +143,7 @@ public boolean contains(Building anEntry) {
     }
     return found;  // 返回是否找到目标元素的布尔值
 }
-
+ 
     // 返回数组中的所有元素的字符串表示形式
 public String toString() {
     String strResult = "Bag[ \n";  // 初始化结果字符串，并添加开头的"Bag["
