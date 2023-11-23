@@ -6,7 +6,7 @@ import java.io.File;
 public class AnytownTest {
     public static void main(String[] args) throws Exception {
 
-        
+         
         ArrayBag buildings = new ArrayBag(13); // 创建一个能够存储13个建筑物的ArrayBag对象
         File fileIn = new File("Anytown/buildings.txt"); // 用于读取建筑物数据的文件
         Scanner fileInput = new Scanner(fileIn); // 创建一个扫描器来读取文件
