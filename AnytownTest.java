@@ -16,7 +16,7 @@ public class AnytownTest {
         // 声明用于存储建筑信息的变量
         String address, owner;
         int numberOfBedrooms, numberOfEmplyees, avgTurnover;
-        boolean hasGarage;
+        boolean hasGarage; 
 
         // 当文件中还有更多行数据时，继续循环
         while (fileInput.hasNextLine()) {
