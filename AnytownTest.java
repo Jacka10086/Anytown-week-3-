@@ -17,7 +17,7 @@ public class AnytownTest {
         String address, owner;
         int numberOfBedrooms, numberOfEmplyees, avgTurnover;
         boolean hasGarage; 
-
+ 
         // 当文件中还有更多行数据时，继续循环
         while (fileInput.hasNextLine()) {
             buildingData = fileInput.nextLine(); // 读取一行建筑数据
