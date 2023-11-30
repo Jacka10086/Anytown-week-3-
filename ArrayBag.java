@@ -51,6 +51,7 @@ private Building removeElmentAt(int index) {
     // 初始化返回结果为null
     Building result = null;
 
+    
     // 检查数组是否非空，并且索引是否在有效范围内
     if (!isEmpty() && (index >= 0 && index < this.numberOfEntries)) {
         // 获取要移除的Building对象
