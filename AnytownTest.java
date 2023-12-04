@@ -30,7 +30,7 @@ public class AnytownTest {
             // 解析地址和拥有者数据
             address = buildingData.substring(marker1, marker2);
             owner = buildingData.substring(marker2 + 1, marker3);
-
+ 
             
             // 根据数据的第一个字符决定数据类型，并创建相应的对象
              switch (buildingData.substring(0,1)) {
