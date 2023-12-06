@@ -131,6 +131,7 @@ public int getFrequencyOf(Building anEntry) {
     return count;  // 返回目标元素在数组中的出现次数
 }
 
+    
     // 判断数组中是否包含指定的元素
 public boolean contains(Building anEntry) {
     boolean found = false;  // 初始化找到标志为false
