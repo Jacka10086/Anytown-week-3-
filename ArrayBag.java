@@ -22,6 +22,7 @@ public class ArrayBag implements BagInterface {
     }
 
     
+    
     // 返回数组中的实际元素数量
     public int getCurrentSize() {
         return this.numberOfEntries;
