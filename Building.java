@@ -27,7 +27,6 @@ public class Building {
     public String getAddress() {
         return this.address;
     }
-
     // 地址的setter方法
     public void setAddress(String address) {
         this.address = address;
