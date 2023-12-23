@@ -1,7 +1,6 @@
 
 package Anytown; // 定义包名为Anytown
 
-
 // 定义一个名为ArrayBag的公共类，它实现了BagInterface接口
 public class ArrayBag implements BagInterface {
 
