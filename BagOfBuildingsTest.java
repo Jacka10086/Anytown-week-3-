@@ -10,7 +10,6 @@ public class BagOfBuildingsTest {
     public static void main(String[] args) {
 
         ArrayBag buildings = new ArrayBag();
-
         System.out.println("--------------------------");
         System.out.println("BAG TEST:");
         System.out.println("Initial state of Bag:");
