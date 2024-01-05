@@ -11,7 +11,7 @@ public class ArrayBag implements BagInterface {
     // 默认构造函数，初始化数组的容量为默认容量
     public ArrayBag() {
         this(ArrayBag.DEFAULT_CAPACITY);
-    }
+    } 
     // 带参数的构造函数，根据给定的容量初始化数组
     public ArrayBag(int capacity) {
         this.bag = new Building[capacity];
