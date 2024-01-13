@@ -17,7 +17,6 @@ public class ArrayBag implements BagInterface {
         this.bag = new Building[capacity];
         this.numberOfEntries = 0;
     }
-
     // 返回数组中的实际元素数量
     public int getCurrentSize() {
         return this.numberOfEntries;
