@@ -21,7 +21,6 @@ public class ArrayBag implements BagInterface {
     public int getCurrentSize() {
         return this.numberOfEntries;
     }
-
     // 判断数组是否为空
     public boolean isEmpty() {
         return this.numberOfEntries == 0;
